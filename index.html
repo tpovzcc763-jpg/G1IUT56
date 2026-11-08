@@ -21,7 +21,7 @@
     function resizeCanvas() {
       // Size the CSS viewport and Unity's drawing surface consistently.
       const width = document.documentElement.clientWidth;
-      const height = window.visualViewport ? window.visualViewport.height : window.innerHeight;
+      const height = window.innerHeight;
       canvas.style.width = width + 'px';
       canvas.style.height = height + 'px';
       if (showDebug) {
